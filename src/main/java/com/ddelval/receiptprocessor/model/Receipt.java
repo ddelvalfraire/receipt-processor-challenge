@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.UUID;
 
-import com.ddelval.receiptprocessor.dto.CreateReceiptDTO;
+import com.ddelval.receiptprocessor.dto.ReceiptDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,12 +23,12 @@ public class Receipt {
     private BigDecimal total;
     private List<ReceiptItem> items;
 
-    public Receipt(CreateReceiptDTO createReceiptDTO) {
+    public Receipt(ReceiptDto receiptDto) {
         this.id = UUID.randomUUID();
-        this.retailer = createReceiptDTO.getRetailer();
-        this.purchaseDate = createReceiptDTO.getPurchaseDate();
-        this.purchaseTime = createReceiptDTO.getPurchaseTime();
-        this.total = createReceiptDTO.getTotal();
-        this.items = createReceiptDTO.getItems();
+        this.retailer = receiptDto.getRetailer();
+        this.purchaseDate = receiptDto.getPurchaseDate();
+        this.purchaseTime = receiptDto.getPurchaseTime();
+        this.total = receiptDto.getTotal();
+        this.items = receiptDto.getItems();
     }
 }
