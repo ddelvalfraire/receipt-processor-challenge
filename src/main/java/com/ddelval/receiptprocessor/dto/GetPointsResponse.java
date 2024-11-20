@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PointsResponse {
+public class GetPointsResponse {
     private int points;
 }

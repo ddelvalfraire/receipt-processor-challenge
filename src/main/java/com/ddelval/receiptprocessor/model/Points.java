@@ -12,5 +12,5 @@ import java.util.UUID;
 public class Points {
     private UUID receiptId;
     private int value;
-    private boolean needsRecalculation;
+    private boolean outdated;
 }
