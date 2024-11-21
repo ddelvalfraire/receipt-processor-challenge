@@ -16,7 +16,7 @@ These instructions will help you build and run the application using Docker.
 1. Clone the repository:
 ```bash
 git clone https://github.com/ddelvalfraire/receipt-processor-challenge.git
-cd receipt-processor
+cd receipt-processor-challenge
 ```
 
 2. Build the Docker image:
